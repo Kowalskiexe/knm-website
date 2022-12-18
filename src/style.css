@@ -1,3 +1,7 @@
+:root {
+    --navbar-height: 4rem;
+}
+
 body {
     margin: 0px;
     font-family: Rubik, serif;
@@ -7,10 +11,7 @@ body {
 .grid-container {
     display: grid;
     justify-content: center;
-}
-
-.content {
-    width: 500px;
+    grid-template-columns: min(100%, 500px);
 }
 
 .content.padded {
@@ -30,27 +31,70 @@ body {
     border-bottom: 1px dashed #9d9d9d;
 }
 
+.post > iframe {
+    width: 100%;
+}
+
 #navbar {
     margin-left: 0px;
     margin-right: 0px;
+    min-height: var(--navbar-height);
+
     background-color: white;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+
     display: flex;
     justify-content: center;
     position: sticky;
+
     top: 0px;
 }
 
 #menu {
     display: flex;
-    width: 500px;
+    width: min(100%, 500px);
+}
+@media not (min-width: 700px) {
+    /* closed */
+    #menu > .subsite-link {
+        visibility: hidden;
+    }
+    /* open */
+    #menu.open {
+        flex-direction: column;
+        padding-top: var(--navbar-height);
+    }
+    #menu.open > .subsite-link {
+        visibility: visible;
+    }
+}
+@media (min-width: 700px) {
+    /* hide burger on desktops */
+    .menu-burger {
+        position: absolute;
+        visibility: hidden;
+    }
+}
+@media not (min-width: 700px) {
+    .menu-burger {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: var(--navbar-height);
+    }
+    .menu-burger > svg {
+        transform: scale(0.4);
+    }
 }
 
 .subsite-link {
-    padding: 20px;
     flex: 1;
     text-align: center;
+    line-height: var(--navbar-height);
 }
 
 .subsite-link:hover {
@@ -59,20 +103,22 @@ body {
 }
 
 .subsite-link.active {
-    text-decoration-line: underline;
+    font-weight: bold;
 }
 
 #logos {
     display: flex;
-    width: 500px;
+    width: min(100%, 500px);
     margin: 0px auto 0px auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo {
-    flex: 1;
     font-size: 1.3em;
     display: flex;
     align-items: center;
+    height: 5rem;
 }
 
 .logo:hover {
@@ -82,13 +128,13 @@ body {
 
 #social-links {
     position: absolute;
-    height: 100%;
-    right: 10px;
+    height: var(--navbar-height);
+    right: 1ch;
     display: flex;
 }
 
 .social-link {
-    padding: 12px;
+    padding: 1.1rem 0.5ch 1.1rem 0.5ch;
     cursor: pointer;
 }
 .social-link img {
@@ -102,7 +148,7 @@ footer {
 }
 
 .footer-content {
-    width: 500px;
+    width: min(100%, 500px);
     padding: 1ch 3ch 1ch 3ch;
     box-sizing: border-box;
     margin-left: auto;
