@@ -1,3 +1,6 @@
+# folder for deploying
+public/
+
 # Logs
 logs
 *.log
