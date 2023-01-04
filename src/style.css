@@ -17,6 +17,8 @@ body {
 .content.padded {
     padding: 3ch;
     background-color: white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     box-sizing: border-box;
 }
 
@@ -26,13 +28,37 @@ body {
 }
 
 .post {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px dashed #9d9d9d;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid black;
+    padding: 3ch;
+    background-color: white;
+    border-radius: 5px;
 }
 
-.post > iframe {
+.post > p {
+    margin-top: 0px;
+}
+
+.post > img {
     width: 100%;
+    border-radius: 5px;
+}
+
+.post-date {
+    font-size: 0.8rem;
+}
+
+.original-post-link {
+    color: black;
+    margin-top: 1rem;
+    display: block;
+}
+
+hr {
+    border-top: 1px dashed #9d9d9d;
+    border-left: 0px solid red;
+    border-right: 0px solid red;
 }
 
 #navbar {
