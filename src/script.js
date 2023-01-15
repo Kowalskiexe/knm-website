@@ -61,7 +61,7 @@ function timestampToString(timestamp) {
     return new Date(timestamp).toLocaleString();
 }
 
-serverURL = 'http://localhost:8000';
+serverURL = 'http://40.113.33.134:8000';
 async function fetchPost(notNewerThan) {
     const res = await fetch(`${serverURL}/${notNewerThan}`);
     const postData = await res.json();
