@@ -61,7 +61,7 @@ function timestampToString(timestamp) {
     return new Date(timestamp).toLocaleString();
 }
 
-serverURL = 'https://40.113.33.134';
+serverURL = 'https://knm-new.wmi.amu.edu.pl';
 async function fetchPost(notNewerThan) {
     const res = await fetch(`${serverURL}/${notNewerThan}`);
     const postData = await res.json();
