@@ -1,0 +1,8 @@
+{
+  "scripts": {
+      "build": "npx shtmlm --in=src --out=public"
+  },
+  "dependencies": {
+    "shtmlm": "^1.0.1"
+  }
+}
