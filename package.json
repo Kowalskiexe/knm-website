@@ -1,6 +1,7 @@
 {
   "scripts": {
-      "build": "npx shtmlm --in=src --out=public"
+      "build": "npx shtmlm --in=src --out=public",
+      "deploy": "scp -r public/* knm@hosting-projects.wmi.amu.edu.pl:public/static/"
   },
   "dependencies": {
     "shtmlm": "^1.0.1"
