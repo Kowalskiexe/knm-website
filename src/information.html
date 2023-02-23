@@ -1,108 +1,50 @@
 <!DOCTYPE html>
 <html lang="pl">
+    <myhead>
+    <body>
+        <logos>
+        <navbar>
 
-<head>
-  <title>KNM - Koło Naukowe Matematyków</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <!-- Google's Rubik font -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-  </style>
-  <!-- ------------------- -->
-</head>
-
-<body>
-
-  <div id="logos">
-    <div class="logo" onclick="navigate('/')">
-      Koło Naukowe Matematyków
-    </div>
-  </div>
-
-  <div id="navbar">
-
-    <div class="menu-burger" onclick="toggleNavbar()">
-      <svg width="64" height="64" viewBox="0 0 16.933333 16.933333" version="1.1" id="svg5"
-        inkscape:version="1.2.2 (b0a8486541, 2022-12-01)" sodipodi:docname="burgar_1.svg"
-        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
-        xmlns:svg="http://www.w3.org/2000/svg">
-        <sodipodi:namedview id="namedview7" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25"
-          inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0"
-          inkscape:deskcolor="#d1d1d1" inkscape:document-units="px" showgrid="true" inkscape:zoom="7.5535582"
-          inkscape:cx="25.021321" inkscape:cy="24.491769" inkscape:window-width="1892" inkscape:window-height="1020"
-          inkscape:window-x="12" inkscape:window-y="44" inkscape:window-maximized="1" inkscape:current-layer="layer1">
-          <inkscape:grid type="xygrid" id="grid686" originx="0" originy="0" empspacing="8" />
-        </sodipodi:namedview>
-        <defs id="defs2" />
-        <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
-          <rect style="fill:#0e0000;stroke-width:0.305514" id="rect1020" width="12.7" height="2.1166673" x="2.116667"
-            y="11.641665" />
-          <rect style="fill:#0e0000;stroke-width:0.264583" id="rect1024" width="12.7" height="2.3812499" x="2.1166663"
-            y="7.2760415" />
-          <rect style="fill:#0e0000;stroke-width:0.264583" id="rect1026" width="12.7" height="2.3812499" x="2.1166663"
-            y="3.0427084" />
-        </g>
-      </svg>
-    </div>
-
-    <div id="menu">
-      <div class="subsite-link" onclick="navigate('/')">Aktualności</div>
-      <div class="subsite-link active" onclick="navigate('information.html')">Informacje</div>
-      <div class="subsite-link" onclick="navigateNewTab('https://forms.gle/1HPxgJoX2vR6if1L9')">Dołącz &#128150</div>
-    </div>
-    <div id="social-links">
-      <div class="social-link">
-        <img src="images/f_logo_RGB-Black_58.png" onclick="navigateNewTab('https://facebook.com/knm.uam')" />
-      </div>
-      <div class="social-link" onclick="navigateNewTab('https://www.instagram.com/kolo_naukowe_matematykow_uam/')">
-        <img src="images/glyph-logo_May2016.png" />
-      </div>
-    </div>
-  </div>
-  <div class="grid-container">
-    <div class="content padded">
-      <h2>O nas</h2>
-      <p>
-        Czy lubisz rozwiązywać trudne zadania i poznawać nowe rzeczy? Jeśli tak, to powinieneś dołączyć do koła
-        matematycznego!
-      </p>
-      <p>
-        Dzięki członkostwu w kołu matematycznym będziesz miał/a okazję spotkać innych studentów, którzy dzielą Twoje
-        zainteresowanie matematyką. Będziecie mogli razem się uczyć i rozwijać, podejmując wyzwania i zgłębiając nowe
-        tematy. Ponadto będziecie mieć szansę uczestniczyć w konferencjach i innych wydarzeniach, gdzie będziecie mogli
-        poszerzyć swoją wiedzę i nawiązać kontakty z innymi osobami zainteresowanymi matematyką.
-      </p>
-      <p>
-        Nie przegapcie tej ekscytującej szansy na bycie częścią żywej społeczności miłośników matematyki. Dołączcie do
-        koła matematycznego już dziś i zacznijcie odkrywać cudowny świat matematyki!
-      </p>
-      <h2>Zarząd</h2>
-      <p>
-        prezes: Anna Szymczyk<br />
-        wiceprezes: Kamil Przespolewski<br />
-        opiekun: dr Jędrzej Garnek
-      </p>
-      <h2>Kontakt</h2>
-      <p>
-        e-mail: <a href="mailto:knm.uam.poznan@gmail.com">knm.uam.poznan@gmail.com</a><br />
-        adres: Uniwersytetu Poznańskiego 4, 61-614 Poznań<br />
-        pokój koła: B2-1
-      </p>
-      <h2>Zapraszamy!</h2>
-      <img class="content-picture" src="images/317029105_471412461553240_8476458860739589803_n.jpg" />
-    </div>
-  </div>
-  <footer>
-    <div class="footer-content">
-      <p>KNM - Koło Naukowe Matematyków, UAM</p>
-      <p>Made with &#128150; by <a href="https://github.com/kowalskiexe" target="_blank">Maciej Kowalski</a></p>
-      <p class="footer-date">&copy; 2022</p>
-    </div>
-  </footer>
-</body>
+        <div class="grid-container">
+            <div class="content padded">
+                <h2>O nas</h2>
+                <p>
+                Czy lubisz rozwiązywać trudne zadania i poznawać nowe rzeczy? Jeśli tak, to powinieneś dołączyć do koła
+                matematycznego!
+                </p>
+                <p>
+                Dzięki członkostwu w kołu matematycznym będziesz miał/a okazję spotkać innych studentów, którzy dzielą Twoje
+                zainteresowanie matematyką. Będziecie mogli razem się uczyć i rozwijać, podejmując wyzwania i zgłębiając nowe
+                tematy. Ponadto będziecie mieć szansę uczestniczyć w konferencjach i innych wydarzeniach, gdzie będziecie mogli
+                poszerzyć swoją wiedzę i nawiązać kontakty z innymi osobami zainteresowanymi matematyką.
+                </p>
+                <p>
+                Nie przegapcie tej ekscytującej szansy na bycie częścią żywej społeczności miłośników matematyki. Dołączcie do
+                koła matematycznego już dziś i zacznijcie odkrywać cudowny świat matematyki!
+                </p>
+                <h2>Zarząd</h2>
+                <p>
+                prezes: Anna Szymczyk<br />
+                wiceprezes: Kamil Przespolewski<br />
+                opiekun: dr Jędrzej Garnek
+                </p>
+                <h2>Kontakt</h2>
+                <p>
+                e-mail: <a href="mailto:knm.uam.poznan@gmail.com">knm.uam.poznan@gmail.com</a><br />
+                adres: Uniwersytetu Poznańskiego 4, 61-614 Poznań<br />
+                pokój koła: B2-1
+                </p>
+                <h2>Zapraszamy!</h2>
+                <img class="content-picture" src="images/317029105_471412461553240_8476458860739589803_n.jpg" />
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <p>KNM - Koło Naukowe Matematyków, UAM</p>
+                <p>Made with &#128150; by <a href="https://github.com/kowalskiexe" target="_blank">Maciej Kowalski</a></p>
+                <p class="footer-date">&copy; 2022</p>
+            </div>
+        </footer>
+    </body>
 
 </html>
