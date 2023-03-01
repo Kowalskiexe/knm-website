@@ -26,9 +26,10 @@
             </svg>
         </div>
 
-        <div class="subsite-link active" onclick="navigate('/')">Aktualności</div>
-        <div class="subsite-link" onclick="navigate('information.html')">Informacje</div>
-        <div class="subsite-link" onclick="navigateNewTab('https://forms.gle/1HPxgJoX2vR6if1L9')">Dołącz &#128150</div>
+        <div class="subsite-link" data-target="" onclick="navigate('/')">Aktualności</div>
+        <div class="subsite-link" data-target="information.html" onclick="navigate('information.html')">Informacje</div>
+        <div class="subsite-link" data-target="_external" onclick="navigateNewTab('https://forms.gle/1HPxgJoX2vR6if1L9')">Dołącz &#128150</div>
+        <script src="navbarHighlighter.js"></script>
     </div>
     <div id="social-links">
         <div class="social-link">
