@@ -1,9 +1,14 @@
 {
   "scripts": {
-      "build": "npx shtmlm --in=src --out=public",
-      "deploy": "scp -r public/* knm@hosting-projects.wmi.amu.edu.pl:public/static/"
+    "clear": "rm -r public/*",
+    "build": "npx shtmlm --in=src --out=public",
+    "deploy": "scp -r public/* knm@hosting-projects.wmi.amu.edu.pl:public/static/",
+    "test": "npx html-validate public"
   },
   "dependencies": {
     "shtmlm": "^1.0.1"
+  },
+  "devDependencies": {
+    "html-validate": "^7.13.2"
   }
 }
