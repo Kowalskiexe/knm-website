@@ -3,7 +3,7 @@ function getPixelsToBottom() {
 }
 
 function timestampToString(timestamp) {
-    const timeDiff = Date.now() - timestamp;
+    const timeDiff = Date.now() - timestamp * 1000;
     const seconds = Math.floor(timeDiff / 1000);
     const minutes = Math.floor(seconds / 60);
     const hours = Math.floor(minutes / 60);
